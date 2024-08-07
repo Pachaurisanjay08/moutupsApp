@@ -34,7 +34,7 @@ const SearchBar = ({ setSearchText }) => {
     <View style={tw`w-full h-15 bg-white flex-row px-5 py-5 `}>
       <View style={tw`flex-row text-lg bg-[#EFFCFF] rounded-lg border-2 border-gray-500 text-[#767E90] w-10/12 h-10 items-center`}>
         <TextInput
-          style={tw`flex-1 text-[#767E90] p-2 text-lg mx-4`}
+          style={tw`flex-1 text-[#767E90] text-base  ml-3 -py-2 my-auto` }
           placeholder="Find your job"
           placeholderTextColor="#767E90"
           autoFocus={false}
