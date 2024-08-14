@@ -17,7 +17,7 @@ const Info = () => {
     <Profilepic/>
     </View> 
     
-    <ScrollView  style={tw`w-screen h-57%`}>
+    <ScrollView  style={tw`w-screen h-62%`}>
     <View>
     <Aboutme/>
     <Skills/>
@@ -25,7 +25,7 @@ const Info = () => {
      <AddLanguageComponent/>
      </View>
      </ScrollView>
-     <Footer/>
+    
      </View>
      
   )

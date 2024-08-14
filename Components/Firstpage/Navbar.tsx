@@ -8,6 +8,8 @@ import Menu from "../../assets/Menu.png"
 import { Image } from 'react-native';
 
 export default function Navbar() {
+  
+  
   const handleEmailPress = () => {
     console.log('Email button pressed');
   };
@@ -28,7 +30,7 @@ export default function Navbar() {
           <TouchableOpacity onPress={handleEmailPress} style={tw`items-center mx-2 `}>
             <Image source={Email} style={tw`w-11 h-7 rounded-full`} />
           </TouchableOpacity>
-          <TouchableOpacity onPress={handleNotificationPress} style={tw`items-center mx-2`}>
+          <TouchableOpacity onPress={() => navigation.navigate('Notificationlist')}  style={tw`items-center mx-2`}>
             <Image source={Notification} style={tw`w-10 h-7 rounded-full`} />
           </TouchableOpacity>
           <TouchableOpacity onPress={handleMenuPress} style={tw`items-center mx-2`}>

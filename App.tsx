@@ -1,15 +1,77 @@
-import { View, Text } from 'react-native'
+import { View, Text, Image} from 'react-native'
 import React from 'react'
+
+import {NavigationContainer} from '@react-navigation/native'
+import {createBottomTabNavigator}from '@react-navigation/bottom-tabs'
 import Home from './Components/Firstpage/Home'
 import Info from './Components/Profile/Info'
-import SearchJobPage from './Components/SearchJobPage/SearchJobPage'
 
+import Spage from './Components/Secondpage/Spage'
+import Earning from './Components/Earnings/Earning'
+
+import Icon from 'react-native-vector-icons/Ionicons'; // Or use any other icon library
+
+ const Tab =createBottomTabNavigator();
 const App = () => {
   return (
-    <View>
-      <SearchJobPage/>
-    </View>
+   <NavigationContainer>
+    <Tab.Navigator>
+      <Tab.Screen name='Home' component={Home}   />
+      <Tab.Screen name='My Applies' component={Spage}/>
+      <Tab.Screen name='Earnings' component={Earning}/>
+      
+      
+      <Tab.Screen name='Profile' component={Info}/>
+
+      
+    </Tab.Navigator>
+
+   </NavigationContainer>
   )
-}
+}; 
+{/* <NavigationContainer>
+      <Tab.Navigator
+        screenOptions={({ route }) => ({
+          tabBarIcon: ({ focused }) => {
+            let iconSource;
+
+            if (route.name === 'Home') {
+              iconSource = focused
+                ? require('./assets/home-active.png')
+                : require('./assets/Homeimg.png');
+            } else if (route.name === 'My Applies') {
+              iconSource = focused
+                ? require('./assets/applies-active.png')
+                : require('./assets/applies.png');
+           
+            } else if (route.name === 'Earnings') {
+              iconSource = focused
+                ? require('./assets/earnings-active.png')
+                : require('./assets/Earning.png');
+            } else if (route.name === 'Profile') {
+              iconSource = focused
+                ? require('./assets/profile-active.png')
+                : require('./assets/Profile.png');
+            }
+
+            return <Image source={iconSource} style={{ width: 24, height: 24 }} />;
+          },
+        })}
+        tabBarOptions={{
+          activeTintColor: 'tomato',
+          inactiveTintColor: 'gray',
+        }}
+      >
+        <Tab.Screen name="Home" component={Home} />
+        <Tab.Screen name="My Applies" component={Spage} />
+        {/* <Tab.Screen name="Search Jobs" component={SearchJobPage} /> */}
+//         <Tab.Screen name="Earnings" component={Earning} />
+//         <Tab.Screen name="Profile" component={Info} />
+//       </Tab.Navigator>
+//     </NavigationContainer>
+//   );
+// }; */}
+
+
 
 export default App

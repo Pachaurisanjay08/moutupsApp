@@ -62,7 +62,7 @@ const Job = () => {
   ];
 
   return (
-    <View style={tw`h-61%`}>
+    <View style={tw`h-69%`}>
       <ScrollView contentContainerStyle={tw`flex-grow`}>
         <View style={tw`p-1`}>
           {jobDetails.map((job, index) => (

@@ -16,7 +16,7 @@ const Spage = () => {
      
      
       <Sjob/>
-      <Footer/>
+      
     </View>
   )
 }

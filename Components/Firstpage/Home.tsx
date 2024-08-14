@@ -18,10 +18,10 @@ const Home = () => {
        <View style={tw`w-screen h-[2px] bg-gray-300 mt-4`}></View>
 
         <View>
-        <SearchBar/>
+        <SearchBar setSearchText={""}/>
         <Text style= {tw`text-[16px] text-[#9a9ea6] font-semibold ml-5 mb-1 mt-2` }>Recommended Jobs</Text>
             <Job/>
-            <Footer/>
+            
            </View>
        
   </View>

@@ -4,6 +4,7 @@ import Photo from '../../assets/Photo.png';
 import tw from 'twrnc';
 
 const Profilepic = () => {
+  
   return (
     <View>
     <View style={tw`justify-center items-center `}>

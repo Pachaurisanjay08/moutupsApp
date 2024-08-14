@@ -67,7 +67,7 @@ const Sjob = () => {
   );
 
   return (
-    <View style={tw`h-full`}>
+    <View style={tw`h-86%`}>
       <SearchBar setSearchText={setSearchText} />
       <Text style= {tw`text-[16px] text-[#9897a7] text-center  font-semibold ml-5 mb-1 mt-2` }>Job applied(53)</Text>
       <ScrollView contentContainerStyle={tw`flex-grow`}>
