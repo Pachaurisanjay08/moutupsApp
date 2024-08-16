@@ -2,8 +2,8 @@
 import React, { useState } from 'react';
 import { View, TextInput, Image, TouchableOpacity } from 'react-native';
 import tw from 'twrnc';
-// import Sicon from '../../assets/Sicon'; 
-// import Filterlogo from '../../assets/Filter.png'; 
+import Sicon from '../../assets/Sicon.png'; 
+import Filterlogo from '../../assets/Filter.png'; 
 import FilterModal from '../Filter/FilterModal';
 
 const SearchBar = ({ setSearchText }:any) => {
@@ -43,10 +43,10 @@ const SearchBar = ({ setSearchText }:any) => {
           keyboardType="default"
           onChangeText={(text) => setSearchText(text)}
         />
-        {/* <Image source={Sicon} style={tw`w-6 h-6 mr-2`} /> */}
+        <Image source={Sicon} style={tw`w-6 h-6 mr-2`} />
       </View>
       <TouchableOpacity onPress={openFilterModal}>
-        {/* <Image source={Filterlogo} style={tw`w-12 h-10 ml-2`} /> */}
+        <Image source={Filterlogo} style={tw`w-12 h-10 ml-2`} />
       </TouchableOpacity>
       <FilterModal
         visible={isFilterModalVisible}
