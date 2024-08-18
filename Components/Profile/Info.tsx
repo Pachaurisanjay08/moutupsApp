@@ -8,7 +8,7 @@ import Qualification from './AddQualificationComponent'
 import AddLanguageComponent from './AddLanguageComponent'
 import Profileheader from './Profileheader';
 import Profilepic from './Profilepic'
-import Footer from "../Firstpage/Footer"
+import Footer from "../HomePage/Footer"
 
 const Info = () => {
   return (

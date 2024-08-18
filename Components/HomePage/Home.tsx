@@ -11,8 +11,8 @@ import Tabs from './Tabs'
 const Home = () => {
     
   return (
-    <View style= {tw`w-screen `}>
-        <View style= {tw`w-full h-1/5 flex-col`}><Navbar/> 
+    <View style= {tw`w-screen bg-[#ffffff]`}>
+        <View style= {tw`w-full h-1/5 flex-col bg-[#ffffff]`}><Navbar/> 
          </View>
        <Tabs/>
        <View style={tw`w-screen h-[2px] bg-gray-300 mt-4`}></View>

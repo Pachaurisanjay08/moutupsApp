@@ -3,9 +3,9 @@ import React from 'react'
 import { enableScreens } from 'react-native-screens';
 import {NavigationContainer} from '@react-navigation/native'
 import {createBottomTabNavigator}from '@react-navigation/bottom-tabs'
-import Home from './Components/Firstpage/Home'
+import Home from './Components/HomePage/Home'
 import Info from './Components/Profile/Info'
-import Spage from './Components/Secondpage/Spage'
+import Spage from './Components/MyApplies/Spage'
 import Earning from './Components/Earnings/Earning'
 
 

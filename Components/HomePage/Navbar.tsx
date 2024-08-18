@@ -23,7 +23,7 @@ export default function Navbar() {
   };
 
   return (
-    <View style={tw ` `}>
+    <View style={tw` `}>
       <View style={tw`w-full mt-2 h-20 flex-row   justify-around`}>
         <Image source={Moutps} style={tw`w-30  h-12 -ml-5 `} />
         <View style={tw`flex-row ml-4 -mr-3 mt-3`}>
@@ -38,9 +38,7 @@ export default function Navbar() {
           </TouchableOpacity>
         </View>
       </View>
-      <View style={tw`flex-1 bg-blue-200 justify-center items-center`}>
-        {/* Additional content for your Navbar */}
-      </View>
+     
     </View>
   );
 }

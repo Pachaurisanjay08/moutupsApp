@@ -3,8 +3,8 @@ import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import Info from './Components/Profile/Info';
-import HomeScreen from './Components/Firstpage/Home'; // Assuming you have a HomeScreen
-import Spage from './Components/Secondpage/Spage';
+import HomeScreen from './Components/HomePage/Home'; // Assuming you have a HomeScreen
+import Spage from './Components/MyApplies/Spage';
 
 const Stack = createStackNavigator();
 

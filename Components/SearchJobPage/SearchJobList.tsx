@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { ScrollView, Image, View, Text } from 'react-native';
 import tw from 'twrnc';
-import SearchBar from '../Firstpage/SearchBar'; // Assuming you have a SearchBar component
-import JobCard from '../Firstpage/Jobcard';
+import SearchBar from '../HomePage/SearchBar'; // Assuming you have a SearchBar component
+import JobCard from '../HomePage/Jobcard';
 
 import S1 from '../../assets/Shell.png';
 import fioLogo from '../../assets/Fioimg.png';

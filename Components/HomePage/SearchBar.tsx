@@ -32,11 +32,11 @@ const SearchBar = ({ setSearchText }:any) => {
 
   return (
     <View style={tw`w-full h-15 bg-white flex-row px-5 py-5 `}>
-      <View style={tw`flex-row text-lg bg-[#EFFCFF] rounded-lg border-2 border-gray-500 text-[#767E90] w-10/12 h-10 items-center`}>
+      <View style={tw`flex-row text-lg bg-[#EFFCFF] rounded-lg border text-[#767E90] w-10/12 h-9 items-center`}>
         <TextInput
           style={tw`flex-1 text-[#767E90] text-base  ml-3 -py-2 my-auto` }
-          placeholder="Find your job"
-          placeholderTextColor="#767E90"
+          placeholder="Find your Job"
+          placeholderTextColor="#9a9ea6"
           autoFocus={false}
           autoCapitalize="none"
           autoCorrect={false}
@@ -46,7 +46,7 @@ const SearchBar = ({ setSearchText }:any) => {
         <Image source={Sicon} style={tw`w-6 h-6 mr-2`} />
       </View>
       <TouchableOpacity onPress={openFilterModal}>
-        <Image source={Filterlogo} style={tw`w-12 h-10 ml-2`} />
+        <Image source={Filterlogo} style={tw`w-11 h-9 ml-5`} />
       </TouchableOpacity>
       <FilterModal
         visible={isFilterModalVisible}

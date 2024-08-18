@@ -2,7 +2,7 @@ import { View, Text, ScrollView } from 'react-native'
 import React from 'react'
 import tw from 'twrnc'
 import NotificationHeader from './NotificationHeader'
-import Footer from "../Firstpage/Footer"
+import Footer from "../HomePage/Footer"
 import Msg from './Msg'
 
 const NotificationsList = () => {
